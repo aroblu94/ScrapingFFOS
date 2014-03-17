@@ -1,0 +1,11 @@
+{
+  "name": "Testing",
+  "description": "...",
+  "launch_path": "/index.html",
+  "type": "privileged",
+  "permissions": {
+    "systemXHR": {
+      "description": "Maybe needed for handling XHR's"
+    }
+  }
+}
