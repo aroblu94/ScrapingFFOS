@@ -36,29 +36,32 @@
 
     <!-- scripts... -->
     <script src="jquery.js"></script>
-    <!-- <script type="text/javascript" src='text.js'></script>-->
+    <script type="text/javascript" src='test.js'></script>
 </head>
+
 <body role="application">
     <section role="region" id="start">
         <header>
             <h1 style="text-align: center">FOO</h1>
         </header>
         <article>
-            <form method="get" id="cerca" action="http://mobile.viaggiatreno.it/vt_pax_internet/mobile/numero">
-                <p>
-                    <label for="numerotreno">Numero treno</label>
-                    <br/>
-                    <input name="numeroTreno" value="" type="text" id="numeroTreno" accesskey="n" tabindex="1" size="15"/>
-                    <br/>
-                    <input type="hidden" name="tipoRicerca" value="numero"/>
-                    <input type="hidden" name="lang" value="IT"/>
-                    <input type="submit" id="submit" href="#info" tabindex="2" value=" Cerca "/>
-                </p>
-            </form>
+            <textarea type="placeholder" id="numeroTreno">Numero Treno</textarea>
+            <button id="cerca" href="#">Cerca</button>
         </article>
     </section>
 
     <section role="region" id="info">
+    	<form method="get" id="cerca" action="http://mobile.viaggiatreno.it/vt_pax_internet/mobile/numero">
+            <p>
+                <label for="numerotreno">Numero treno</label>
+                <br/>
+                <input name="numeroTreno" value="" type="text" id="numeroTreno" accesskey="n" tabindex="1" size="15"/>
+                <br/>
+                <input type="hidden" name="tipoRicerca" value="numero"/>
+                <input type="hidden" name="lang" value="IT"/>
+                <input type="submit" id="submit" href="#info" tabindex="2" value=" Cerca "/>
+            </p>
+        </form>
 
 </body>
 </html>
